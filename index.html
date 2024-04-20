@@ -19,14 +19,49 @@
   
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        
-
 
   <!-- Open Graph-->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Shruti Sekharan | Business Process Manager" />
   <meta property="og:description" content="Business Process Manager" />
+
+  <!------ found this in w3c school-->
+  <style>
+    body {
+        background-color: #fff; /* Fallback color */
+    }
+
+    #about {
+        background-image: url('About background.png'); /* image path for the About section */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #experience {
+        background-image: url('experience background image.png'); /*image path for the Experience section */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #skills {
+        background-image: url('Skills background.png'); /* image path for the skills section */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #education {
+        background-image: url('education.png'); /* image path for the education section */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+</head> 
 
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
@@ -174,21 +209,43 @@
       </section>
 
       <!-- Skills Section -->
-    <section id="skills" class="section scrollspy">
+      <section id="skills" class="section scrollspy">
         <h3 class="page-title white-text teal">Skills</h3>
         <div class="container">
-          <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">Skill and Technologies</h4>
-              <div class="row text-center">
-                <div class="col s4 m2"><img alt="R logo" src="R_logo.png" class="responsive-img" />R</div>
-                <div class="col s4 m2"><img alt="Advanced Excel logo" src="assets/img/Advanced excel logo.png" class="responsive-img" />Advanced Excel</div>
-                <div class="col s4 m2"><img alt="Project Management image" src="Project Management image.jpg" class="responsive-img" />Project Management</div>
-                <div class="col s4 m2"><img alt="Tableau logo" src="Tableau logo.png" class="responsive-img" />Tableau</div>
-              </div>
+            <div class="card">
+                <div class="card-content">
+                    <h4 class="brown-text light">Skill and Technologies</h4>
+                    <div class="row">
+                        <div class="col s4 m2 text-center">
+                            <figure>
+                                <img src="R_logo.png" alt="R logo" class="responsive-img" />
+                                <figcaption>R</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col s4 m2 text-center">
+                            <figure>
+                                <img src="Advanced excel logo.png" alt="Advanced Excel logo" class="responsive-img" />
+                                <figcaption>Advanced Excel</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col s4 m2 text-center">
+                            <figure>
+                                <img src="Project Management image.jpg" alt="Project Management image" class="responsive-img" />
+                                <figcaption>Project Management</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col s4 m2 text-center">
+                            <figure>
+                                <img src="Tableau logo.png" alt="Tableau logo" class="responsive-img" />
+                                <figcaption>Tableau</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      </section>
+        </div>
+    </section>
+    
   
   <!-- Education Section -->
   <section id="education" class="section scrollspy">
@@ -199,10 +256,10 @@
           <div class="card">
             <div class="card-content">
               <p><span class="card-title"><a href="https://msb.georgetown.edu/" target="_blank" class="teal-text hoverline">Georgetown University - McDonough School Of Business</a></span></p>
-              <p class="grey-blue-text">Washington DC, USA</p>
-              <p><b>Degree:</b> MBA - Management Science</p>
-              <p><b>CGPA:</b> 3.4/4.0</p>
-              <p><b>Relevant Courseworks:</b>
+                <p class="grey-blue-text">Washington DC, USA</p>
+                <p><b>Degree:</b> MBA - Management Science</p>
+                <p><b>CGPA:</b> 3.4/4.0</p>
+                <p><b>Relevant Courseworks:</b>
                 <ul>
                   <li>Applied Product Management</li>
                   <li>Customer Analytics</li>
@@ -224,7 +281,7 @@
       <p>
         <a aria-label="Call Shruti" data-position="top" data-tooltip="Call Shruti"
           class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-            aria-label="Call Shruti">+12024892374</a></a>
+            aria-label="Call Shruti">+1 (202)-489-2374</a></a>
       </p>
       <p>
         <a aria-label="Email Shruti" href="mailto:sekharan0906@gmail.com" target="_blank" data-position="top"
@@ -257,23 +314,35 @@
 </script>
 
 
-<!-- jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<!-- Materialize - Compiled and minified JavaScript-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-<script>
-  // Materialize - Initializers
-  $(document).ready(function () {
-    $(".scrollspy").scrollSpy()
-    // Initialize collapse button
-    $(".button-collapse").sideNav({
-      menuWidth: 190, // Default is 240
-      edge: "left", // Choose the horizontal origin
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    })
-  })
-</script>
+  <!-- Materialize - Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> <!-- Update to latest version if different -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Ensure jQuery is included -->
+  <script>
+    $(document).ready(function() {
+      // Function to initialize Materialize components
+      function initializeMaterialize() {
+        // Initialize ScrollSpy
+        $('.scrollspy').scrollSpy();
+
+        // Initialize SideNav
+        $('.button-collapse').sideNav({
+          menuWidth: 190, // Default is 240
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
+      }
+
+      try {
+        initializeMaterialize();
+      } catch (error) {
+        console.error("Error initializing Materialize components: ", error);
+      }
+    });
+  </script>
+
 </body>
 
 </html>
