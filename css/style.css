@@ -507,6 +507,14 @@
 #experience .card-content {
   text-align: left; 
   padding-left: 30px; 
+  overflow: visible; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  word-wrap: break-word; 
+}
+
+#experience .accenture .card-content, #experience .deloitte .card-content {
+  padding: 15px 30px; 
 }
 
 
@@ -548,7 +556,7 @@
 
 /* Styling for role titles */
 .role {
-  color: #676c6b;  // Teal color, change as needed
+  color: #6542ac;  // Teal color, change as needed
   font-size: 20px;  // Larger font size for visibility
   margin-bottom: 10px;  // Adds a little space below the role title for clarity
 }
@@ -672,9 +680,7 @@
       text-align: center;
       display: block;
     }
-    #experience span.card-title a {
-      margin: 0;
-    }
+
     i.mdi-navigation-close.right {
       position: relative;
       bottom: 15px;
@@ -694,3 +700,22 @@
       background-position-x: 30%;
     }
   }
+
+  .element-class:hover {
+    background-color: #f0f0f0;  // Changes background color on hover
+    cursor: pointer;  // Changes cursor to pointer to indicate interactivity
+}
+
+#parent-div .element-class:hover {
+  background-color: #f0f0f0;
+}
+
+.element-class {
+  pointer-events: none;  // This will disable hover effects
+}
+
+$(".element-class").hover(function() {
+  $(this).css("background-color", "#f0f0f0");
+}, function() {
+  $(this).css("background-color", "#ffffff");
+});
