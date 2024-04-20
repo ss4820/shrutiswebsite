@@ -7,7 +7,7 @@
   margin: 0; 
   margin-left: -32px;
   border: 7px solid rgba(0, 77, 64, 0.4); 
-  border-radius: 50%; /* Changed to 50% for a perfect circle */
+  border-radius: 50%; 
 }
 
 .profile-pic img {
@@ -283,11 +283,11 @@
   }
   
   .card .role {
-    font-size: 1.25rem;
-    position: absolute;
-    right: 38px;
-    top: 35px;
-  }
+    position: relative; 
+    padding-top: 10px;   
+    clear: both;         
+}
+
   
   .card li a {
     margin-right: 0;
@@ -505,8 +505,8 @@
 }
 
 #experience .card-content {
-  text-align: left; /* Ensures text alignment is to the left */
-  padding-left: 30px; /* Adds padding to the left for a margin effect */
+  text-align: left; 
+  padding-left: 30px; 
 }
 
 
@@ -539,6 +539,33 @@
   padding-left: 40px; /* Adds padding to the left */
   margin-left: 20px; /* Adds additional margin to the left */
 }
+
+#contact img.linkedin-icon {
+  width: 24px;  // Specify the width
+  height: 24px; // Specify the height
+  vertical-align: middle; // Aligns icon with text vertically
+}
+
+/* Styling for role titles */
+.role {
+  color: #676c6b;  // Teal color, change as needed
+  font-size: 20px;  // Larger font size for visibility
+  margin-bottom: 10px;  // Adds a little space below the role title for clarity
+}
+
+/* Adds spacing between the company name and its logo */
+.card-title img {
+  margin-left: 60px;  // Adds space between the text and the image
+  vertical-align: middle;  // Aligns the image with the text
+}
+
+
+@media (max-width: 768px) {
+  .card-content {
+      min-height: 200px; // Increase height in smaller screens if content is still overlapping
+  }
+}
+
 
   
   @media (min-width: 1200px) {
