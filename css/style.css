@@ -15,38 +15,9 @@
   height: 100%;
 }
 
-  
-  .tracker {
-    /* visibility: hidden; */
-    position: fixed;
-    /* margin-inline-end: auto;  */
-    bottom: 0; 
-    right: 0;
-  }
+
   
   @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-  .social {
-    margin: 0 auto;
-    width: auto;
-    text-align: inherit;
-    /* padding: 10px; */
-  }
-  
-  .icon-btn {
-    margin-left: auto;
-    width: 50px;
-    height: 50px;
-    border: 0;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 30px;
-    line-height: 70px;
-    border-radius: 45px;
-    display: inline-block;
-    margin: 4px;
-  }
-  
- 
   
   .linkedin {
     color: #0077b5;
@@ -85,11 +56,6 @@
     background-color: white;
   }
 
-  
-  /* .readme:hover{
-    color: white;
-    background-color: #00796b;
-  } */
   
   .contactme {
     position: relative;
@@ -419,7 +385,7 @@
   }
   /* using flex from w3c school - https://www.w3schools.com/css/css3_flexbox.asp */
   
-#skills .container {
+  #skills .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -525,33 +491,55 @@
   background-repeat: no-repeat;
 }
 
+#about .container .col {
+  text-align: left;
+  padding-left: 40px; /* Increase padding-left as needed */
+}
+
+
+
 #experience {
-  background-image: url('experience background image.png'); /*image path for the Experience section */
-  background-size: cover;
+  background-image: url('experience background image.png'); 
   background-position: center;
   background-repeat: no-repeat;
 }
-#experience > p {
-  margin-left: 30px;  
+
+#experience .card-content {
+  text-align: left; /* Ensures text alignment is to the left */
+  padding-left: 30px; /* Adds padding to the left for a margin effect */
 }
+
 
 #skills {
-  background-image: url('Skills background.png'); /* image path for the About section */
+  background-image: url('Skills background.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#education p {
+#skills .card-content {
+  text-align: left; /* Ensures text alignment is to the left */
+  padding-left: 180px; /* Adds padding to the left for a margin effect */
+}
+
+#education {
   background-image: url('education background.jpg'); /* image path for the Experience section */
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
 }
 
-#education p {
-  margin-left: 30px;  /* Adds left margin to all paragraphs inside #education */
+#education .card-content {
+  text-align: left; /* Ensures text alignment is to the left */
+  padding-left: 30px; /* Adds padding to the left for a margin effect */
 }
+
+
+#contact .container {
+  padding-left: 40px; /* Adds padding to the left */
+  margin-left: 20px; /* Adds additional margin to the left */
+}
+
   
   @media (min-width: 1200px) {
     #experience .container {
@@ -563,7 +551,7 @@
     .card ul li {
       font-size: 14px;
       line-height: 200%;
-      margin-left: 20px;
+      margin-left: px;
     }
   }
   
