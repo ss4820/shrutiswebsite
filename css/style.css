@@ -1,11 +1,11 @@
 .profile-pic {
-  position: relative; /* Confirm the element is positioned */
-  z-index: 10; /* Higher value than other elements on the page */
+  position: relative; 
+  z-index: 10; 
   max-width: 100%;
   width: auto;
   height: auto;
   overflow: hidden;
-  margin: auto;
+  margin: 10px auto;
   margin-left: -45px; 
   border: 3px solid rgba(0, 77, 64, 0.4);
   border-radius: 50%;
@@ -571,10 +571,24 @@
 
 @media (max-width: 600px) {
   .profile-pic {
-    margin-left: -10px;  // Lesser shift for smaller screens
-    border: 2px solid rgba(0, 77, 64, 0.3);
+    max-width: 80px;  
+    margin-left: 10px;  
+    float: left; 
+  }
+
+  .caption {
+    margin-left: 100px;  
+    padding-top: 20px;  
+    text-align: left;
+    z-index: 20;
+  }
+
+  .caption h2, .caption h5 {
+    font-size: 16px;  
   }
 }
+
+
 
 @media (max-width: 768px) {
   .card-content {
